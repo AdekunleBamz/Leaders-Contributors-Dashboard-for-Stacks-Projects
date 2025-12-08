@@ -40,7 +40,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         } else {
           allContributors[login] = {
             login,
-            commits: contributions,
+            comits: contributions,
             avatarUrl: avatar_url,
             profileUrl: html_url,
           };

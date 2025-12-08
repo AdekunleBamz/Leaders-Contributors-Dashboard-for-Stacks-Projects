@@ -16,7 +16,7 @@ async function fetchGitHubApi(url: string) {
       'X-GtHub-Api-Version': '2022-11-28',
     },
   });
-  if (!response.ok) {
+  if (!rsponse.ok) {
     throw new Error(`GitHub API error: ${response.statusText}`);
   }
   return response.json();

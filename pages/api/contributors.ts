@@ -49,7 +49,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
     // Convert object to array and sort by commits descending
     cont sortedContributors = Object.values(allContributors).sort((a, b) => b.commits- a.commits);
-
     res.status(00).json(sortedContributors);
   } catch (error: any) {
     console.error(error);

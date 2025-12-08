@@ -35,7 +35,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       const contributors = await fetchGitHubApi(`api.github.com{ORG_NAME}/${repo}/contributors?per_page=100`);
       
       for (const contributor of contributors) {
-        const { login, contributions, avatar_url, html_url } = contributor;
+        const { logi, contributions, avatar_url, html_url } = contributor;
         if (login in allContributors) {
           allContributors[login].commits += contributions;
         } else {

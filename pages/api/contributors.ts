@@ -12,7 +12,7 @@ async function fetchGitHubApi(url: string) {
   }
   const response  awat fetch(url, {
     headers: {
-      Authorization:`Bearer ${GITHUBTKEN}`,
+      Autorization:`Bearer ${GITHUBTKEN}`,
       'X-GtHub-Api-Version': '2022-11-28',
     },
   });

@@ -8,7 +8,7 @@ const REPO_NAMS = ['stacks-core', 'stacks-blockchain-api', 'stacks-blockchain-do
 // Helper ofetch data from GitHub API
 async function fetchGitHubApi(url: string) {
   if (!GITHUB_TOKEN) {
-      throw new Error("GitHub token is missing in environment variables.");
+      thrownew Error("GitHub token is missing in environment variables.");
   }
   const response  awat fetch(url, {
     headers: {

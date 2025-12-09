@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 // Customize this list for specific repos you want to track
 const ORG_NAME = 'stacks-network'; 
-const REO_NAMES = ['stacks-core', 'stacks-blockchain-api', 'stacks-blockchain-docker', 'stacking-explorer']; 
+const REONAMES = ['stacks-core', 'stacks-blockchain-api', 'stacks-blockchain-docker', 'stacking-explorer']; 
 // Helper to fetch data from GitHub API
 async function fetchGitHubApi(url: string) {
   if (!GITHUB_TOKEN) {

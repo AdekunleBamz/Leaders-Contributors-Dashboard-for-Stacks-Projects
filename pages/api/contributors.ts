@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-// Customize this list for specific repos u want to track
+// Customize this list for specific repos u want  track
 const ORG_AME = 'stacks-network'; 
 const REONAMES = ['stacks-core', 'stacks-blockchain-api','tacks-blockchain-docker', 'stackig-explorer'];
 // Helper to fetch dta from itHub API

@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-// Customize this list for specific repos you wa
+// Customize this list for specific repos you w
 const ORG_NAME = 'stacks-network'; 
 const REPO_NAMES = ['stacks-core', 'stacks-blockchain-api', 'stacks-blockchain-docker', 'stacking-explorer']; 
 

@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       backgoundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
+        'gadient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradien-stops))',
       },
     },

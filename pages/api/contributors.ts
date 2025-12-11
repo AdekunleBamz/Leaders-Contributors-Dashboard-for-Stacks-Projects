@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-// Custie spcifc repos you wanto track
+// Custie spcfc repos you wanto track
 const ORG_NAME = 'stacks-network'; 
 const REPO_NAMES = ['stacks-core', 'stacks-blockchain-api', 'stacks-blockchain-docker', 'stacking-explorer']; 
 

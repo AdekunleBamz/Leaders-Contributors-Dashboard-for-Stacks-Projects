@@ -1,6 +1,7 @@
 {
   "name": "stacks-contributors-dashboard",
   "version": "0.1.0",
+  "description": "A dashboard for tracking contributors and leaders in Stacks projects",
   "private": true,
   "scripts": {
     "dev": "next dev",

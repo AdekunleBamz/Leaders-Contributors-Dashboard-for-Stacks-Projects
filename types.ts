@@ -126,3 +126,55 @@ export interface ProjectRepository {
   /** Last updated timestamp */
   updatedAt: number;
 }
+
+/**
+ * Filter options for querying users
+ */
+export interface UserFilterOptions {
+  /** Filter by role */
+  role?: UserRole;
+  
+  /** Minimum number of contributions */
+  minContributions?: number;
+  
+  /** Maximum number of contributions */
+  maxContributions?: number;
+  
+  /** Search by username or address */
+  search?: string;
+  
+  /** Sort field */
+  sortBy?: 'contributions' | 'earned' | 'lastActive';
+  
+  /** Sort direction */
+  sortOrder?: 'asc' | 'desc';
+}
+
+/**
+ * Contribution details
+ */
+export interface Contribution {
+  /** Unique contribution ID */
+  id: string;
+  
+  /** User who made the contribution */
+  userAddress: string;
+  
+  /** Project name */
+  projectName: string;
+  
+  /** Contribution type */
+  type: 'code' | 'documentation' | 'review' | 'test' | 'other';
+  
+  /** Contribution description */
+  description: string;
+  
+  /** STX earned for this contribution */
+  earned: number;
+  
+  /** Timestamp of contribution */
+  timestamp: number;
+  
+  /** Status of contribution */
+  status: 'pending' | 'approved' | 'rejected';
+}
